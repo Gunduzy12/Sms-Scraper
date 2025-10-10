@@ -1,4 +1,4 @@
-# -*- mode: python ; coding: utf-8 -*-
+
 
 
 a = Analysis(
@@ -37,3 +37,4 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
+
