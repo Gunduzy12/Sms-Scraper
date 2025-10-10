@@ -1,6 +1,4 @@
 
-
-
 a = Analysis(
     ['gui_main.py'],
     pathex=[],
