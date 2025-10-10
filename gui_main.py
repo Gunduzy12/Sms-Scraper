@@ -7,7 +7,6 @@ import os
 import sys
 import pandas as pd
 
-# Pillow ile logo desteği
 from PIL import Image, ImageTk
 
 try:
@@ -22,7 +21,6 @@ from exporter import save_to_excel
 from messenger import send_whatsapp_messages
 from hwid_lock import enforce_hwid, load_allowed
 
-# Dosyanın bulunduğu dizini dinamik olarak al
 def resource_path(relative_path):
     """Get absolute path to resource, works for dev and for PyInstaller"""
     try:
@@ -132,7 +130,6 @@ def excel_mesaj_gonder(excel_file_path, mesaj, file_paths, log_func, update_list
         update_status_func(f"{ICON_ERROR} Hata oluştu: {e}")
 
 class ToolTip:
-    # Basit tooltip desteği
     def __init__(self, widget, text):
         self.widget = widget
         self.text = text
@@ -435,4 +432,5 @@ class App:
 
 if __name__ == "__main__":
     app = App()
+
     app.root.mainloop()
