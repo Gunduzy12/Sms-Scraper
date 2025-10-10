@@ -29,7 +29,6 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-# HWID kontrolü artık dosya yolunu dinamik olarak buluyor
 enforce_hwid(load_allowed(resource_path("allowed_hwids.txt")))
 
 ICON_WHATSAPP = "\U0001F4AC"    # 💬
@@ -434,3 +433,4 @@ if __name__ == "__main__":
     app = App()
 
     app.root.mainloop()
+
