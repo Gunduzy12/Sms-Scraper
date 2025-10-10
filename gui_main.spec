@@ -1,5 +1,3 @@
-# -*- mode: python ; coding: utf-8 -*-
-
 
 a = Analysis(
     ['gui_main.py'],
@@ -36,3 +34,4 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
+
